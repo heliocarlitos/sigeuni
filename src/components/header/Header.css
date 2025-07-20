@@ -1,0 +1,30 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: var(--cor-azul);
+    padding: 0 20px;
+}
+
+.header .logo {
+    color: var(--cor-branca);
+
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.header .logo span {
+    font-size: .6rem;
+}
+
+.header .sub_menu {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
