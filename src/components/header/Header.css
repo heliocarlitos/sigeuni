@@ -10,6 +10,7 @@
     position: relative;
     background-color: var(--cor-azul);
     padding: 0 20px;
+    user-select: none;
 }
 
 .header .logo {
