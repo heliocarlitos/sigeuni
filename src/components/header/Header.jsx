@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
-import "./Header.css"
+import "./Header.css";
+import { FiUser, FiBell, FiFileText, FiHelpCircle, FiSettings, FiLogOut } from "react-icons/fi";
+
 function Header() {
     const [mostrarSubmenu, setMostrarSubmenu] = useState(false);
     const submenuRef = useRef(null);
@@ -27,79 +29,54 @@ function Header() {
                     <p>SIGEUNI <span>v1.1</span></p>
                 </Link>
 
-                <button className="btn_img" onClick={alternarSubmenu}>
-                    <figure>
-                        <img src="https://placehold.co/50" alt="Foto do usuario" width={50} height={50} />
-                    </figure>
-                </button>
+                {/* Envolve o botão e submenu num contêiner com a ref */}
+                <div ref={submenuRef} className="submenu-container">
 
-                {mostrarSubmenu && (
-                    <nav className="sub_menu">
+                    <button className="btn_img" onClick={alternarSubmenu}>
+                        <figure>
+                            <img src="https://placehold.co/50" alt="Foto do usuario" width={40} height={40} />
+                        </figure>
+                    </button>
 
-                        <div className="sub_menu_header">
+                    {mostrarSubmenu && (
+                        <nav className="sub_menu">
 
-                            <figure>
-                                <img src="https://placehold.co/70" alt="Foto do usuario" width={70} height={70} />
-                            </figure>
+                            <div className="sub_menu_header">
 
-                            <div className="nome_codigo">
-                                <p className="nome"> Nome Completo </p>
-                                <p className="codigo"> 01.01.2025</p>
+                                <figure>
+                                    <img src="https://placehold.co/60" alt="Foto do usuario" width={60} height={60} />
+                                </figure>
+
+                                <div className="nome_codigo">
+                                    <p className="nome"> Nome Completo </p>
+                                    <p className="codigo"> 01.01.2025</p>
+                                </div>
+
                             </div>
 
-                        </div>
+                            <ul>
+                                <li><Link to="#"><div className="icon"><FiUser /></div>Dados pessoais</Link></li>
+                                <li><Link to="#"><div className="icon"><FiBell /></div>Notificações</Link></li>
+                                <li><Link to="#"><div className="icon"><FiFileText />
+                                </div>Documentos úteis</Link></li>
+                                <li><Link to="#"><div className="icon"><FiHelpCircle />
+                                </div>FAQ</Link></li>
+                                <li><Link to="#"><div className="icon"><FiSettings /></div>Configurações</Link></li>
+                            </ul>
 
-                        <ul>
-                            <li>
-                                <Link to="#">
-                                    <div className="icon">
+                            <button>
 
-                                    </div>
-                                    Dados pessoais
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link to="#">
-                                    <div className="icon">
-
-                                    </div>
-                                    Notificações
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link to="#">
-                                    <div className="icon">
-
-                                    </div>
-                                    Documentos úteis
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link to="#">
-                                    <div className="icon">
-
-                                    </div>
-                                    FAQ
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link to="#">
-                                    <div className="icon">
-
-                                    </div>
-                                    Configurações
-                                </Link>
-                            </li>
-                        </ul>
-
-                    </nav>
-                )}
-
+                                <div className="icon">
+                                    <FiLogOut />
+                                </div>
+                                Sair
+                            </button>
+                            
+                        </nav>
+                    )}
+                </div>
             </header>
+
         </>
     )
 }
