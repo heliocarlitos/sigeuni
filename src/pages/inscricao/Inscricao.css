@@ -1,0 +1,80 @@
+.inscricao {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inscricao .navegacao {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    user-select: none;
+}
+
+.inscricao .navegacao button {
+    position: relative;
+}
+
+.inscricao .navegacao .concluido {
+    color: var(--cor-verde);
+}
+
+.inscricao .navegacao .actual {
+    color: var(--cor-azul);
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: var(--cor-azul);
+        height: 3px;
+        width: 100%;
+        bottom: -5px;
+    }
+}
+
+.inscricao .navegacao .nao_concluido {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.inscricao .formulario {
+    display: flex;
+    gap: 30px;
+}
+
+.inscricao .formulario .input_bloco {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.inscricao .formulario .input_bloco .input_caixa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inscricao .formulario .input_bloco .input_caixa label {
+    color: var(--cor-do-texto-label);
+}
+
+.inscricao .formulario .input_bloco .input_caixa label span {
+    font-size: .9rem;
+}
+
+@media screen and (max-width: 575px) {
+    .inscricao .formulario {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .inscricao .navegacao {
+        display: none;
+    }
+}

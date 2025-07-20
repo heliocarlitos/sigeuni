@@ -7,10 +7,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     background-color: var(--cor-azul);
     padding: 0 20px;
     user-select: none;
+    z-index: 9999;
 }
 
 .header .logo {

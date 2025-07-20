@@ -7,21 +7,48 @@
 :root {
     --cor-preta: #000;
     --cor-azul: #0B4D9C;
+    --cor-azul-hover: #136cda;
     --cor-azul-transparent: #0B4D9C20;
     --cor-branca: #fff;
     --cor-vermelha: #ff0000;
     --cor-vermelha-transparent: #ff000020;
+    --cor-verde: #038f5c;
     --cor-do-titulo: var(--cor-preta);
     --cor-do-texto: #444;
+    --cor-do-texto-label: #222;
     --sombra-suave: -3px 3px 20px 0 #00000022;
     --borda-suave: 1px solid #00000068;
     --borda-none: 1px solid transparent;
+    --borda-preta: 1px solid var(--cor-preta);
 }
 
 html {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-family: "Public Sans", Arial, Helvetica, sans-serif;
     font-display: swap;
     font-size: 1rem;
+}
+
+body {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+main {
+    margin: 70px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+button,
+label,
+textarea,
+input,
+ul,
+li {
+    font-size: 1rem;
+    color: var(--cor-do-texto);
 }
 
 a {
@@ -56,6 +83,19 @@ button {
     }
 }
 
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--cor-do-titulo);
+    outline: 0;
+    border: var(--borda-suave);
+
+    &:focus {
+        border: 1px solid var(--cor-preta);
+    }
+}
+
 .btn_img {
     border-radius: 100%;
 
@@ -63,12 +103,53 @@ button {
         border-radius: 100%;
     }
 }
-.icon{
+
+.icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    & svg{
+
+    & svg {
         font-size: 1.2rem;
+    }
+}
+
+.titulo1,
+.titulo2,
+.titulo3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-do-titulo);
+}
+
+.titulo2 {
+    font-size: 1.3rem;
+}
+
+.titulo3 {
+    font-size: 1.1rem;
+}
+
+.Btn {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+
+    & button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: var(--cor-branca);
+        gap: 7px;
+    }
+
+    & button:nth-child(1) {
+        background-color: var(--cor-azul);
+
+        &:hover {
+            background-color: var(--cor-azul-hover);
+        }
     }
 }
 
