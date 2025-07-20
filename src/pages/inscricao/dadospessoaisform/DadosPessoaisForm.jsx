@@ -6,7 +6,7 @@ function DadosPessoaisForm() {
                 <div className="input_bloco">
 
                     <div className="titulo3">
-                        <p>Informações pessoais</p>
+                        <p> Informações pessoais </p>
                     </div>
 
                     <div className="input_caixa">
