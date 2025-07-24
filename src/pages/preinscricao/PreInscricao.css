@@ -1,0 +1,31 @@
+.PreInscricao {
+    padding: 20px;
+}
+
+.PreInscricao .formulario {
+    display: flex;
+    gap: 30px;
+}
+
+.PreInscricao .formulario {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.PreInscricao .formulario .input_seccao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.PreInscricao .Btn {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 575px) {
+    .formulario {
+        flex-direction: column;
+    }
+}

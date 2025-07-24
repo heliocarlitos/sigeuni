@@ -1,0 +1,13 @@
+.input_caixa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input_caixa label {
+    color: var(--cor-do-texto-label);
+}
+
+.input_caixa label span {
+    font-size: .9rem;
+}

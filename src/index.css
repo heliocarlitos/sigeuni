@@ -96,7 +96,7 @@ input {
     border: 2px solid var(--cor-cinza);
 
     &:focus {
-        border: 2px solid var(--cor-preta);
+        border: 2px solid var(--cor-azul-hover);
     }
 
     &::placeholder {

@@ -53,20 +53,6 @@
     width: 100%;
 }
 
-.inscricao .formulario .input_bloco .input_caixa {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.inscricao .formulario .input_bloco .input_caixa label {
-    color: var(--cor-do-texto-label);
-}
-
-.inscricao .formulario .input_bloco .input_caixa label span {
-    font-size: .9rem;
-}
-
 @media screen and (max-width: 575px) {
     .inscricao .formulario {
         flex-direction: column;
