@@ -29,10 +29,9 @@ function Header() {
                     <p>SIGEUNI <span>v1.1</span></p>
                 </Link>
 
-                {/* Envolve o botão e submenu num contêiner com a ref */}
                 <div className="submenu_container" ref={submenuRef}>
 
-                    <div className="links_do_menu">
+                    <div className="links_de_entrar">
 
                         <Link to="/entrar">
                             <div className="icon">
@@ -41,13 +40,17 @@ function Header() {
                             Entrar
                         </Link>
 
+                        <Link to="/pre-inscricao">
+                            Inscrição
+                        </Link>
+
                     </div>
 
-                    <button className="btn_img" onClick={alternarSubmenu} >
+                    {/* <button className="btn_img" onClick={alternarSubmenu} >
                         <figure>
                             <img src="https://placehold.co/50" alt="Foto do usuario" width={40} height={40} />
                         </figure>
-                    </button>
+                    </button> */}
 
                     {mostrarSubmenu && (
                         <nav className="sub_menu" >
