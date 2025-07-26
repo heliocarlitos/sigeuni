@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import "./Header.css";
-import { FiUser, FiBell, FiFileText, FiHelpCircle, FiSettings, FiLogOut } from "react-icons/fi";
+import { FiLogIn, FiUser, FiBell, FiFileText, FiHelpCircle, FiSettings, FiLogOut } from "react-icons/fi";
 
 function Header() {
     const [mostrarSubmenu, setMostrarSubmenu] = useState(false);
@@ -30,16 +30,27 @@ function Header() {
                 </Link>
 
                 {/* Envolve o botão e submenu num contêiner com a ref */}
-                <div ref={submenuRef} className="submenu-container">
+                <div className="submenu_container" ref={submenuRef}>
 
-                    <button className="btn_img" onClick={alternarSubmenu}>
+                    <div className="links_do_menu">
+
+                        <Link to="/entrar">
+                            <div className="icon">
+                                <FiLogIn />
+                            </div>
+                            Entrar
+                        </Link>
+
+                    </div>
+
+                    <button className="btn_img" onClick={alternarSubmenu} >
                         <figure>
                             <img src="https://placehold.co/50" alt="Foto do usuario" width={40} height={40} />
                         </figure>
                     </button>
 
                     {mostrarSubmenu && (
-                        <nav className="sub_menu">
+                        <nav className="sub_menu" >
 
                             <div className="sub_menu_header">
 
@@ -65,13 +76,12 @@ function Header() {
                             </ul>
 
                             <button>
-
                                 <div className="icon">
                                     <FiLogOut />
                                 </div>
                                 Sair
                             </button>
-                            
+
                         </nav>
                     )}
                 </div>

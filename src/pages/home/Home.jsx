@@ -1,10 +1,8 @@
-import Entrar from "../entrar/Entrar";
-
 function Home() {
     return (
         <>
             <section className="Home">
-                <Entrar />
+                <h1> Home </h1>
             </section>
         </>
     )
