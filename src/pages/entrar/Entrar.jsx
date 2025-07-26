@@ -5,13 +5,18 @@ import "./Entrar.css";
 
 function Entrar() {
     const [verSenha, setVerSenha] = useState(false);
-
+    const anoActual = new Date().getFullYear();
     const alternarVisibilidade = () => {
         setVerSenha((estadoAnterior) => !estadoAnterior);
     };
 
     return (
         <section className="Entrar">
+
+            <div className="CopyRigth">
+                <p> © {anoActual} SIGEUNI </p>
+            </div>
+
             <form className="formulario" autoComplete="off">
                 <div className="input_bloco">
 

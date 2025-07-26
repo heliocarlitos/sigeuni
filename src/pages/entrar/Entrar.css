@@ -1,8 +1,7 @@
 .Entrar {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 20px;
+    justify-content: end;
     top: 0;
     right: 0;
     position: fixed;
@@ -15,6 +14,15 @@
     background-attachment: fixed;
 }
 
+.Entrar .CopyRigth {
+    background-color: var(--cor-branca);
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
 .Entrar .formulario {
     background-color: var(--cor-branca);
     width: 100%;
@@ -22,7 +30,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding-inline: 20px;
+    padding-inline: 30px;
     transition: .2s ease;
 }
 
@@ -75,13 +83,14 @@
     height: 45px;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:752px) {
+
     .Entrar .formulario {
         max-width: 100%;
         background-color: #ffffffd6;
         backdrop-filter: blur(4px);
         height: auto;
-        padding: 20px;
+        padding: 30px;
         margin-inline: 20px;
         border-radius: 10px;
     }
