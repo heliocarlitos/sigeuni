@@ -8,12 +8,14 @@ import Inscricao_1 from "./pages/inscricao/Inscricao_1";
 import Inscricao_2 from "./pages/inscricao/Inscricao_2";
 import Inscricao_3 from "./pages/inscricao/Inscricao_3";
 import PreInscricao from "./pages/preinscricao/PreInscricao";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
     <>
       <Header />
       <main>
+        <Home />
         <Routes>
           <Route path="/inscricao_1" element={<Inscricao_1 />} />
           <Route path="/inscricao_2" element={<Inscricao_2 />} />

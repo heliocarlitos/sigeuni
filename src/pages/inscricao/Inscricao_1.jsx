@@ -28,7 +28,6 @@ function Inscricao_1() {
 
                 <div className="formulario">
 
-
                     <div className="input_bloco">
 
                         <Input

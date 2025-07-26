@@ -25,7 +25,7 @@
 }
 
 @media screen and (max-width: 575px) {
-    .formulario {
+    .PreInscricao .formulario {
         flex-direction: column;
     }
 }

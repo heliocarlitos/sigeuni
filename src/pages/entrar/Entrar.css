@@ -1,0 +1,87 @@
+.Entrar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    z-index: 999999;
+    background-image: url(../../../public/image/relativas/estudantes.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.Entrar .formulario {
+    background-color: var(--cor-branca);
+    width: 100%;
+    max-width: 550px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+}
+
+.Entrar .formulario .input_bloco {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.Entrar .formulario .input_bloco .input_caixa {
+    position: relative;
+}
+
+.Entrar .formulario .input_bloco .input_caixa .icon {
+    position: absolute;
+    transform: translateY(43px) translateX(15px);
+}
+
+.Entrar .formulario .input_bloco .input_caixa .versenha {
+    right: 35px;
+    margin-top: 3px;
+
+    & svg {
+        color: var(--cor-preta);
+    }
+}
+
+.Entrar .formulario .input_bloco .input_caixa input {
+    padding-left: 50px;
+}
+
+.Entrar .formulario .input_bloco .esqueci_senha {
+    display: flex;
+    justify-content: right;
+    margin-top: -10px;
+}
+
+.Entrar .formulario .input_bloco .esqueci_senha button {
+    border-radius: 3px;
+    border: var(--borda-none);
+
+    &:focus {
+        border: var(--borda);
+    }
+}
+
+.Entrar .formulario .input_bloco .Btn button {
+    width: 100%;
+    height: 45px;
+}
+
+@media screen and (max-width:700px) {
+    .Entrar {
+        background-color: var(--cor-branca);
+    }
+
+    .Entrar .formulario {
+        max-width: 100%;
+    }
+}
