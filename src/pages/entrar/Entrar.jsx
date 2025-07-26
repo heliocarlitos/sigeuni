@@ -70,6 +70,7 @@ function Entrar() {
 
                 </div>
             </form>
+
         </section>
     );
 }
