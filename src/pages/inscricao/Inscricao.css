@@ -11,8 +11,20 @@
     gap: 20px;
     justify-content: space-between;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     user-select: none;
+}
+
+.inscricao .navegacao a {
+    background-color: var(--cor-cinza-suave);
+    color: var(--cor-preta);
+    padding: 10px 20px;
+    clip-path: polygon(93% 0, 100% 50%, 94% 100%, 0% 100%, 5% 50%, 0% 0%);
+}
+
+.inscricao .navegacao .actual {
+    background-color: var(--cor-azul);
+    color: var(--cor-branca) !important;
 }
 
 .inscricao .navegacao button {

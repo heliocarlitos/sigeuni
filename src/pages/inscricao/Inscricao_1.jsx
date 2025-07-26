@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Input from "../../components/unicos/input/Input";
 import "./Inscricao.css";
+import { Link } from "react-router-dom";
 
 function Inscricao_1() {
     const navigate = useNavigate();
@@ -19,17 +20,9 @@ function Inscricao_1() {
 
                 <div className="navegacao">
 
-                    <button>
-                        Dados pessoais
-                    </button>
-
-                    <button>
-                        Dados académicos
-                    </button>
-
-                    <button>
-                        Dados do curso
-                    </button>
+                    <Link to="/inscricao_1" className="actual">Dados pessoais</Link>
+                    <Link to="/inscricao_2">Dados académicos</Link>
+                    <Link to="/inscricao_3">Dados do curso</Link>
 
                 </div>
 
