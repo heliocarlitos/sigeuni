@@ -7,13 +7,10 @@ function SpinLoader() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Sempre que a localização muda (nova rota), activa o loader
         setLoading(true);
-
-        // Simula carregamento por 1 segundo (ajusta conforme necessário)
         const timeout = setTimeout(() => {
             setLoading(false);
-        }, 2000); // ou menos, se preferires
+        }, 2000); 
 
         return () => clearTimeout(timeout);
     }, [location]);
