@@ -13,9 +13,9 @@ function Entrar() {
     return (
         <section className="Entrar">
 
-            <div className="CopyRigth">
+            {/* <div className="CopyRigth">
                 <p> © {anoActual} SIGEUNI </p>
-            </div>
+            </div> */}
 
             <form className="formulario" autoComplete="off">
                 <div className="input_bloco">
