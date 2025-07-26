@@ -1,8 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import Input from "../../components/unicos/input/Input";
 import "./Inscricao.css";
 import { FiChevronRight } from "react-icons/fi";
 
 function Inscricao_2() {
+    const navigate = useNavigate();
+
+    const redirecionar = () => {
+        navigate("/inscricao_1");
+    };
     return (
         <>
             <section className="inscricao">
@@ -79,12 +85,8 @@ function Inscricao_2() {
                 </div>
 
                 <div className="Btn">
-                    <button>
-                        Próximo
-                        <div className="icon">
-                            <FiChevronRight />
-                        </div>
-
+                    <button onClick={redirecionar}>
+                        Volatar
                     </button>
                 </div>
 
