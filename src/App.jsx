@@ -7,7 +7,7 @@ import Header from "./components/header/Header";
 import Inscricao_1 from "./pages/inscricao/Inscricao_1";
 import Inscricao_2 from "./pages/inscricao/Inscricao_2";
 import Inscricao_3 from "./pages/inscricao/Inscricao_3";
-import PreInscricao from "./pages/preinscricao/preinscricao";
+import PreInscricao from "./pages/preinscricao/PreInscricao";
 
 function App() {
   return (
