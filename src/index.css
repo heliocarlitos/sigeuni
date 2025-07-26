@@ -88,7 +88,8 @@ button {
     }
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 0 10px;
     height: 50px;
@@ -104,6 +105,10 @@ input, select {
     &::placeholder {
         color: var(--cor-cinza);
     }
+}
+
+input {
+    background-color: transparent;
 }
 
 select {
