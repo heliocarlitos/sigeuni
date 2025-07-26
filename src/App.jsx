@@ -11,9 +11,13 @@ import PreInscricao from "./pages/preinscricao/PreInscricao";
 import Home from "./pages/home/Home";
 import Entrar from "./pages/entrar/Entrar";
 
+// COMPONENTES
+import SpinLoader from "./components/spinloader/SpinLoader";
+
 function App() {
   return (
     <>
+      <SpinLoader />
       <Header />
       <main>
 
